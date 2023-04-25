@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+          GeometryReader {
+                let size = $0.size
+                let safeArea = $0.safeAreaInsets
+                
+                ScrollViewReader { proxy in
+                      HomeView(proxy: proxy, size: size, safeArea: safeArea)
+                }
+                .preferredColorScheme(.light)
+                .ignoresSafeArea()
+          }
     }
 }
 

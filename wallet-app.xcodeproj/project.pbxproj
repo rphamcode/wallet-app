@@ -7,18 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5A9082FE29F820B300B5B36E /* wallet_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9082FD29F820B300B5B36E /* wallet_appApp.swift */; };
+		5A9082FE29F820B300B5B36E /* WalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9082FD29F820B300B5B36E /* WalletApp.swift */; };
 		5A90830029F820B300B5B36E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A9082FF29F820B300B5B36E /* ContentView.swift */; };
 		5A90830229F820B500B5B36E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A90830129F820B500B5B36E /* Assets.xcassets */; };
 		5A90830529F820B500B5B36E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A90830429F820B500B5B36E /* Preview Assets.xcassets */; };
+		5AB6DF2629F822B500358D1F /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF2529F822B500358D1F /* Card.swift */; };
+		5AB6DF2829F823A500358D1F /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF2729F823A500358D1F /* Expense.swift */; };
+		5AB6DF2D29F82DBE00358D1F /* OffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF2C29F82DBE00358D1F /* OffsetReader.swift */; };
+		5AB6DF2F29F82E5100358D1F /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF2E29F82E5100358D1F /* ViewExtension.swift */; };
+		5AB6DF3129F8314100358D1F /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF3029F8314100358D1F /* ExpensesView.swift */; };
+		5AB6DF3329F8336D00358D1F /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF3229F8336D00358D1F /* CardView.swift */; };
+		5AB6DF3529F835A200358D1F /* ProfileCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF3429F835A200358D1F /* ProfileCardView.swift */; };
+		5AB6DF3729F8366400358D1F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB6DF3629F8366400358D1F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5A9082FA29F820B300B5B36E /* wallet-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wallet-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A9082FD29F820B300B5B36E /* wallet_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wallet_appApp.swift; sourceTree = "<group>"; };
+		5A9082FD29F820B300B5B36E /* WalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletApp.swift; sourceTree = "<group>"; };
 		5A9082FF29F820B300B5B36E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5A90830129F820B500B5B36E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A90830429F820B500B5B36E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5AB6DF2529F822B500358D1F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		5AB6DF2729F823A500358D1F /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
+		5AB6DF2C29F82DBE00358D1F /* OffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffsetReader.swift; sourceTree = "<group>"; };
+		5AB6DF2E29F82E5100358D1F /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		5AB6DF3029F8314100358D1F /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
+		5AB6DF3229F8336D00358D1F /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		5AB6DF3429F835A200358D1F /* ProfileCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCardView.swift; sourceTree = "<group>"; };
+		5AB6DF3629F8366400358D1F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,11 @@
 		5A9082FC29F820B300B5B36E /* wallet-app */ = {
 			isa = PBXGroup;
 			children = (
-				5A9082FD29F820B300B5B36E /* wallet_appApp.swift */,
+				5A9082FD29F820B300B5B36E /* WalletApp.swift */,
 				5A9082FF29F820B300B5B36E /* ContentView.swift */,
+				5AB6DF2429F821E300358D1F /* Models */,
+				5AB6DF2329F821D700358D1F /* Views */,
+				5AB6DF2B29F82D9F00358D1F /* Helpers */,
 				5A90830129F820B500B5B36E /* Assets.xcassets */,
 				5A90830329F820B500B5B36E /* Preview Content */,
 			);
@@ -65,6 +84,35 @@
 				5A90830429F820B500B5B36E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5AB6DF2329F821D700358D1F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5AB6DF3029F8314100358D1F /* ExpensesView.swift */,
+				5AB6DF3229F8336D00358D1F /* CardView.swift */,
+				5AB6DF3429F835A200358D1F /* ProfileCardView.swift */,
+				5AB6DF3629F8366400358D1F /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5AB6DF2429F821E300358D1F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5AB6DF2529F822B500358D1F /* Card.swift */,
+				5AB6DF2729F823A500358D1F /* Expense.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5AB6DF2B29F82D9F00358D1F /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5AB6DF2C29F82DBE00358D1F /* OffsetReader.swift */,
+				5AB6DF2E29F82E5100358D1F /* ViewExtension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AB6DF3529F835A200358D1F /* ProfileCardView.swift in Sources */,
+				5AB6DF2829F823A500358D1F /* Expense.swift in Sources */,
+				5AB6DF3329F8336D00358D1F /* CardView.swift in Sources */,
+				5AB6DF2D29F82DBE00358D1F /* OffsetReader.swift in Sources */,
 				5A90830029F820B300B5B36E /* ContentView.swift in Sources */,
-				5A9082FE29F820B300B5B36E /* wallet_appApp.swift in Sources */,
+				5AB6DF3729F8366400358D1F /* HomeView.swift in Sources */,
+				5AB6DF3129F8314100358D1F /* ExpensesView.swift in Sources */,
+				5AB6DF2F29F82E5100358D1F /* ViewExtension.swift in Sources */,
+				5AB6DF2629F822B500358D1F /* Card.swift in Sources */,
+				5A9082FE29F820B300B5B36E /* WalletApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
